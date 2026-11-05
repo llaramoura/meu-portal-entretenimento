@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Entretenimento Digital</title>
+
+    <!-- O Reset é carregado antes do CSS principal -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- CSS interno: centraliza os títulos das seções -->
+    <style>
+        .secao h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho e navegação -->
+    <header class="cabecalho">
+        <h1>Meu Portal</h1>
+        <nav>
+            <a href="#cinema">Cinema</a>
+            <a href="#musica">Música</a>
+            <a href="#games">Games</a>
+        </nav>
+    </header>
+
+    <!-- Apresentação principal -->
+   <section class="apresentacao">
+    <h1 style="color: #263d30;">Meu Portal de Entretenimento Digital</h1>
+    <p>Explore, descubra e aproveite!</p>
+</section>
+
+    <!-- Flexbox organiza os cartões lado a lado -->
+    <main class="portal">
+
+        <!-- Filmes e séries -->
+        <section class="secao" id="cinema">
+            <h2>🎬 Filmes e Séries</h2>
+            <div class="imagens">
+                <img class="capa" src="imagens/dr-house.jpg" alt="Pôster de Dr. House">
+                <img class="capa" src="imagens/sherlock.jpg" alt="Pôster de Sherlock">
+                <img class="capa" src="imagens/v-de-vinganca.jpg" alt="Pôster de V de Vingança">
+            </div>
+            <p class="descricao">Cinema é mais do que assistir: é se perder em histórias incríveis e personagens inesquecíveis.</p>
+            <h3>Destaques:</h3>
+            <ul>
+                <li>Dr. House</li>
+                <li>Sherlock</li>
+                <li>Hotel Assombrado</li>
+                <li>V de Vingança</li>
+                <li>Help!</li>
+                <li>Sociedade dos Poetas Mortos</li>
+            </ul>
+            <p class="diretores">Diretores favoritos: Wes Anderson e Martin Scorsese.</p>
+        </section>
+
+        <!-- Música -->
+        <section class="secao" id="musica">
+            <h2>♫ Música e Podcasts</h2>
+            <div class="imagens">
+                <img class="capa" src="imagens/olivia-rodrigo.jpg" alt="Capa de Olivia Rodrigo">
+                <img class="capa" src="imagens/beatles-help.jpg" alt="Capa do álbum Help! dos Beatles">
+                <img class="capa" src="imagens/queen-under-pressure.jpg" alt="Capa relacionada ao Queen e Under Pressure">
+            </div>
+            <p class="descricao">Grandes artistas, músicas inesquecíveis e sons que nos acompanham sempre.</p>
+            <h3>Minhas músicas:</h3>
+            <ul>
+                <li>I Want to Hold Your Hand</li>
+                <li>Twist and Shout</li>
+                <li>Maggots for Brains</li>
+                <li>Honeybee</li>
+                <li>Help!</li>
+                <li>Under Pressure</li>
+            </ul>
+            <p class="diretores">Artistas favoritos: The Beatles e Olivia Rodrigo.</p>
+        </section>
+
+        <!-- Games e tecnologia -->
+        <section class="secao" id="games">
+            <h2>🎮 Games e Tecnologia</h2>
+            <div class="imagens">
+                <img class="capa" src="imagens/the-last-of-us.jpg" alt="Capa de The Last of Us">
+                <img class="capa" src="imagens/valorant.jpg" alt="Arte de Valorant">
+                <img class="capa" src="imagens/resident-evil.jpg" alt="Capa de Resident Evil">
+            </div>
+            <p class="descricao">Jogos, inovação e mundos incríveis para explorar e se divertir.</p>
+            <h3>Meus destaques:</h3>
+            <ul>
+                <li>The Last of Us</li>
+                <li>Valorant</li>
+                <li>Resident Evil</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <p>Porque o entretenimento também é vida! ♡</p>
+        <p>Portal criado por Lara dos Santos</p>
+    </footer>
+
+</body>
+</html>

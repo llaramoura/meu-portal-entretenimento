@@ -1,0 +1,126 @@
+/* Estilo principal: paleta vintage verde, creme e terracota */
+body {
+    background-color: #f3e4cd;
+    color: #263d30;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Barra superior */
+.cabecalho {
+    background-color: #20382c;
+    color: #f8ead2;
+    padding: 22px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecalho h1 { font-size: 28px; }
+.cabecalho nav { display: flex; gap: 25px; }
+.cabecalho a { color: #f8ead2; font-size: 18px; }
+
+/* Banner de apresentação */
+.apresentacao {
+    text-align: center;
+    padding: 50px 15px;
+    background: linear-gradient(120deg, #e5c8a4, #f8ead8, #d7b99a);
+    border-bottom: 4px solid #b9825c;
+}
+.apresentacao h1 { font-size: 40px; margin-bottom: 12px; }
+.apresentacao p { font-size: 22px; font-style: italic; }
+
+/* Flexbox coloca as três seções em colunas */
+.portal {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 22px;
+    padding: 30px 2%;
+}
+
+/* Cartões individuais */
+.secao {
+    background-color: #fff4e3;
+    border: 1px solid #bd9870;
+    border-radius: 18px;
+    flex: 1;
+    min-width: 0;
+    padding: 16px;
+    box-shadow: 2px 4px 10px #cbb89f;
+}
+
+/* Cabeçalho de cada cartão */
+.secao h2 {
+    background-color: #263d30;
+    color: #fff0d8;
+    padding: 15px 5px;
+    border-radius: 12px;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+/* As três capas ficam alinhadas dentro de cada seção */
+.imagens {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+/* Classe compartilhada para padronizar as imagens */
+.capa {
+    width: calc(33.333% - 5px);
+    height: 205px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    border: 2px solid #d4b18b;
+}
+
+/* Textos descritivos */
+.descricao {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 18px 0;
+    font-style: italic;
+}
+.secao h3 {
+    border-top: 1px solid #bd9870;
+    padding-top: 13px;
+    margin-bottom: 8px;
+}
+.secao ul {
+    line-height: 1.7;
+    padding-left: 8px;
+}
+.diretores {
+    background-color: #ead9c2;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #20382c;
+    color: #f8ead2;
+    text-align: center;
+    padding: 24px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Ajustes para tablets e celulares */
+@media (max-width: 900px) {
+    .portal { flex-wrap: wrap; }
+    .secao { flex: 1 1 45%; }
+}
+@media (max-width: 600px) {
+    .portal { flex-direction: column; }
+    .secao { width: 100%; }
+    .apresentacao h1 { font-size: 30px; }
+    .cabecalho { flex-direction: column; gap: 15px; }
+    .cabecalho nav { flex-wrap: wrap; justify-content: center; }
+    .capa { height: 220px; }
+}

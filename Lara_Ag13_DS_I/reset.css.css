@@ -1,0 +1,19 @@
+/* CSS Reset inspirado no modelo de Eric Meyer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+ul {
+    list-style-position: inside;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+}
